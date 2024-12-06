@@ -25,10 +25,11 @@ The research paper demonstrates that using a filtering network trained on a smal
 
 Clone this repository and install the required dependencies:
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Krishna737Sharma/Data-Filtering-Network
+cd Data-Filtering-Network
 pip install -r requirements.txt
-Usage
+
+## Usage
 Running Data Filtering Networks (DFNs)
 python
 Copy code
