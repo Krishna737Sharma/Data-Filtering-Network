@@ -16,44 +16,29 @@ This repository provides an implementation of Data Filtering Networks (DFNs) and
 - `results/`: Folder to store logs, metrics, and plots.  
 
 ## Installation  
-Clone the repository and install the required dependencies:  
-```bash  
-git clone https://github.com/yourusername/your-repo-name.git  
-cd your-repo-name  
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
 pip install -r requirements.txt
 
-Usage
-Example: Running Data Filtering Networks
+from src.dfn import DataFilteringNetwork
+dfn = DataFilteringNetwork()
+dfn.train(dataset)
+filtered_data = dfn.filter(unfiltered_data)
 
-from src.dfn import DataFilteringNetwork  
-dfn = DataFilteringNetwork()  
-dfn.train(dataset)  
-filtered_data = dfn.filter(unfiltered_data)  
-
-Example: Clustering with HAC
-
-from src.hac import HierarchicalAgglomerativeClustering  
-hac = HierarchicalAgglomerativeClustering(distance_metric="euclidean", linkage="average")  
-labels = hac.fit_predict(data)  
+from src.hac import HierarchicalAgglomerativeClustering
+hac = HierarchicalAgglomerativeClustering(distance_metric="euclidean", linkage="average")
+labels = hac.fit_predict(data)
 
 Datasets
-
-    UCI Vehicle Silhouettes Dataset: Used for clustering experiments.
-    Online News Popularity Dataset: Used for regression tasks with Support Vector Machines (SVM).
-    Diabetes Dataset: Used for Random Forest regression experiments.
-
+UCI Vehicle Silhouettes Dataset: Used for clustering experiments.
+Online News Popularity Dataset: Used for regression tasks with Support Vector Machines (SVM).
+Diabetes Dataset: Used for Random Forest regression experiments.
 Results
-
-    Improved dataset quality using DFNs, leading to better model accuracy and robustness.
-    Comparison of custom implementations with scikit-learn models for clustering, regression, and filtering tasks.
-
+Improved dataset quality using DFNs, leading to better model accuracy and robustness.
+Comparison of custom implementations with scikit-learn models for clustering, regression, and filtering tasks.
 References
-
-    Fang et al., Data Filtering Networks, arXiv 2023.
-
+Fang et al., Data Filtering Networks, arXiv 2023.
 License
-
 This repository is licensed under the MIT License. See the LICENSE file for details.
 Contributing
-
 Contributions are welcome! Feel free to open an issue or submit a pull request.
