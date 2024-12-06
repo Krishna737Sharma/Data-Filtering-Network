@@ -15,14 +15,14 @@ git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 pip install -r requirements.txt
 
-# Running Data Filtering Networks (DFNs)
+## Running Data Filtering Networks (DFNs)
 from src.dfn import DataFilteringNetwork
 
 dfn = DataFilteringNetwork()
 dfn.train(dataset)
 filtered_data = dfn.filter(unfiltered_data)
 
-# Performing Clustering with HAC
+## Performing Clustering with HAC
 from src.hac import HierarchicalAgglomerativeClustering
 
 hac = HierarchicalAgglomerativeClustering(distance_metric="euclidean", linkage="average")
