@@ -13,7 +13,7 @@ This repository focuses on implementing **Data Filtering Networks (DFNs)** and *
 ```bash
 git clone https://github.com/Krishna737Sharma/Data-Filtering-Network
 cd Data-Filtering-Network
-pip install -r requirements.txt
+pip install -r requirements.txt  .
 
 
 
