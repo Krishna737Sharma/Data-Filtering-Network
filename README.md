@@ -13,10 +13,7 @@ This repository focuses on implementing **Data Filtering Networks (DFNs)** and *
 ```bash
 git clone https://github.com/Krishna737Sharma/Data-Filtering-Network
 cd Data-Filtering-Network
-pip install -r requirements.txt  .
-
-
-
+pip install -r requirements.txt
 
 ## Usage
 ```python
@@ -33,20 +30,20 @@ from src.hac import HierarchicalAgglomerativeClustering
 hac = HierarchicalAgglomerativeClustering(distance_metric="euclidean", linkage="average")
 labels = hac.fit_predict(data)
 
-# Datasets Used
+## **Datasets Used**
 
 - **UCI Vehicle Silhouettes Dataset**: Used for clustering experiments.
 - **Online News Popularity Dataset**: Used for regression tasks.
 - **Diabetes Dataset**: Used for Random Forest regression experiments.
 
-# License
+# **License**
 
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
 
-# References
+# **References**
 
 - Fang et al., *Data Filtering Networks*, arXiv 2023.
 
-# Contributing
+# **Contributing**
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
